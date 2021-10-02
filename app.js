@@ -36,6 +36,11 @@ app.get('/school', (req,res) => {
     res.send(data.school);
 });
 //The sum of two numbers (POST)
+app.post('/sum', (req,res) => {
+    const nums = req.body;
+    let suma = nums.num1 + nums.num1;
+    res.send(suma);
+});
 //The multiplication of three numbers (POST)
 //The area of a square (POST)
 //The area of a triangle (POST)
