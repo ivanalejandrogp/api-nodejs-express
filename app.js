@@ -38,9 +38,21 @@ app.get('/school', (req,res) => {
 //The sum of two numbers (POST)
 app.post('/sum', (req,res) => {
     const nums = req.body;
-    let suma = nums.num1 + nums.num1;
-    res.send(suma);
+    let n1 = parseInt(nums.num1);
+    let n2 = parseInt(nums.num2);
+    let suma = n1 + n2;
+    let parsedSuma = suma.toString();
+    res.send(parsedSuma);
 });
 //The multiplication of three numbers (POST)
+app.post('/mult', (req,res) => {
+    const nums = req.body;
+    let n1 = parseInt(nums.num1);
+    let n2 = parseInt(nums.num2);
+    let n3 = parseInt(nums.num3);
+    let mult = n1 * n2 * n3;
+    let parsedMult = mult.toString();
+    res.send(parsedMult);
+});
 //The area of a square (POST)
 //The area of a triangle (POST)
