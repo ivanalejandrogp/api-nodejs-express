@@ -1,6 +1,6 @@
 # NODE JS CHALLENGE
 
-##API REST con Node.js y Express.js
+## API REST con Node.js y Express.js
 
 #### Node es un entorno de ejecución para código Javascript del lado del servidor.
 #### Express es un framework que acompañado de Node, facilita el desarrollo de aplicaciones web y APIs.
