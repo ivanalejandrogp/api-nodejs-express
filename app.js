@@ -55,4 +55,20 @@ app.post('/mult', (req,res) => {
     res.send(parsedMult);
 });
 //The area of a square (POST)
+app.post('/squarearea', (req,res) => {
+    const sides = req.body;
+    let sideOne = parseInt(sides.lado1);
+    let sideTwo = parseInt(sides.lado2);
+    let squareArea = sideOne * sideTwo;
+    let parsedArea = squareArea.toString();
+    res.send(parsedArea);
+});
 //The area of a triangle (POST)
+app.post('/trianglearea', (req,res) => {
+    const triangle = req.body;
+    let base = parseInt(triangle.base1);
+    let height = parseInt(triangle.height1);
+    let triangleArea = (base * height)/2;
+    let parsedArea = triangleArea.toString();
+    res.send(parsedArea);
+});
